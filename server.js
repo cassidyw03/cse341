@@ -4,13 +4,9 @@
 const express = require("express")
 const app = express()
 
-app.get("/", (req, res) => {
-  res.send("Reece Mangum")
-})
+app.use('/', require('./routes'));
 
 // Local server information 
-// const port = process.env.PORT
-// const host = process.env.HOST
 const port = 5500
 
 // Log statement to confirm server operation
